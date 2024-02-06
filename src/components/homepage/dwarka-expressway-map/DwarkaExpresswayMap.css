@@ -1,0 +1,20 @@
+.map-project-box {
+  width: 165px;
+  position: absolute;
+  top: 0px;
+}
+.map_hr {
+    border-color: white;
+}
+.map-project-box p {
+    font-size: 10px;
+    margin-bottom: 0;
+}
+.map-box img {
+    position: absolute;
+    /* top: 50px; */
+    left: 50px;
+}
+.map_container {
+    margin-top: 60px;
+}
