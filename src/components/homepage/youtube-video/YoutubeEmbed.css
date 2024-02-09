@@ -1,0 +1,18 @@
+/* .video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin-top: 30px;
+  } */
+  .youtube_video {
+    margin-top: 30px;
+  }
+  
+  .video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 60%;
+    width: 100%;
+    position: absolute;
+  }

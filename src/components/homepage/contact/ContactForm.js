@@ -14,13 +14,15 @@ const ContactForm = () => {
                 alt="sumit anand"
               />
               <h4>Sumit Anand Our Property Expert</h4>
-              <p>20+ Years of Experience in Real Estate Investments</p>
-              <p className="phone">
+              <p style={{ color: "gray" }}>
+                20+ Years of Experience in Real Estate Investments
+              </p>
+              <p className="phone mb-0">
                 <a href="tel:9999063322">
                   <span>Call now :</span> +91-9999063322
                 </a>
               </p>
-              <p className="phone">
+              <p className="phone mb-0">
                 <a href="mailto: sumit.guptapromoters@gmail.com">
                   <span>Email :</span> sumit.guptapromoters@gmail.com
                 </a>
@@ -29,17 +31,12 @@ const ContactForm = () => {
           </div>
           <div className="col-md-6 col-12">
             <div className="agent_form">
-              <h5 className="ACthClr f24">
-                Yes I am
-                <span style={{ color: "#ff385c" }}>Interested!</span>
+              <h5>
+                Yes, I am <span style={{ color: "#ff385c" }}>Interested!</span>
               </h5>
               <p>Know More About Dwarka Expressway</p>
               <div className="agent-form">
-                <form
-                  id="example3"
-                  method="post"
-                  onsubmit="sendMail3(); return false;"
-                >
+                <form id="example3" method="post">
                   <input type="hidden" id="g-token" name="g-token" value="" />
                   <input
                     type="hidden"
