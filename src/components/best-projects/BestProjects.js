@@ -6,7 +6,9 @@ const BestProjects = () => {
   return (
     <>
       <div className="container top_container">
-        <h2 className="text-center">Best Projects on Dwarka Expressway</h2>
+        <h1 className="text-center best_project_heading">
+          Best Projects on Dwarka Expressway
+        </h1>
         <div className="row">
           <div className="col-md-3 mt30">
             <Card />

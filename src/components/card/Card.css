@@ -5,30 +5,47 @@
   border-radius: 14px;
 }
 .card_img {
-    border-radius: 14px;
-    height: 220px;
-    overflow: hidden;
+  border-radius: 14px;
+  height: 220px;
+  overflow: hidden;
 }
 .card_body h4 {
-    font-size: 15px;
-    margin-top: 10px;
-    font-weight: 600;
-    color: #ff385c;
+  font-size: 15px;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #ff385c;
 }
 .property_location {
-    color: #222;
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 6px;
+  color: #222;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 6px;
 }
 .location_icon {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .property_price {
-    font-size: 14px;
-    font-weight: 500;
+  font-size: 14px;
+  font-weight: 500;
 }
 .property_price span {
-    color: #ff385c;
-    font-weight: 600;
+  color: #ff385c;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+  .card_body h4 {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+  .property_location {
+    font-size: 12px;
+  }
+  .property_price {
+    font-size: 13px;
+  }
+  .fw_property_section {
+    margin-top: 40px;
+    padding: 40px 0px;
+  }
 }

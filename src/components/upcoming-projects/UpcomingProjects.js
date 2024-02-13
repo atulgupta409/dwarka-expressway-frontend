@@ -1,14 +1,14 @@
-import React from "react";
-import Card from "../card/Card";
-import "./NewLaunchProjects.css";
-import ContactForm from "../homepage/contact/ContactForm";
+import React, { lazy } from "react";
 
-const NewLaunchProjects = () => {
+const ContactForm = lazy(() => import("../homepage/contact/ContactForm"));
+const Card = lazy(() => import("../card/Card"));
+
+const UpcomingProjects = () => {
   return (
     <>
       <div className="container top_container">
         <h1 className="text-center best_project_heading">
-          New Launch Projects on Dwarka Expressway
+          Upcoming Projects on Dwarka Expressway
         </h1>
         <div className="row">
           <div className="col-md-3 mt30">
@@ -42,4 +42,4 @@ const NewLaunchProjects = () => {
   );
 };
 
-export default NewLaunchProjects;
+export default UpcomingProjects;

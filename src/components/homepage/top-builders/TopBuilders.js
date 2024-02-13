@@ -11,8 +11,8 @@ const TopBuilders = () => {
       <h2 className="best_project_heading">
         Popular Builders on Dwarka Expressway
       </h2>
-      <div className="row">
-        <div className="col-md-3 mt30">
+      <div className="row best_projects_row">
+        <div className="col-md-3 col-5 mt30">
           <div className="builder_card">
             <div className="builder_img">
               <img src={tataLogo} alt="builder-logo" />
@@ -20,7 +20,7 @@ const TopBuilders = () => {
             <div className="builder_name">Tata Housing</div>
           </div>
         </div>
-        <div className="col-md-3 mt30">
+        <div className="col-md-3 col-5 mt30">
           <div className="builder_card">
             <div className="builder_img">
               <img src={dlfLogo} alt="builder-logo" />
@@ -28,7 +28,7 @@ const TopBuilders = () => {
             <p className="builder_name">DLF Projects</p>
           </div>
         </div>
-        <div className="col-md-3 mt30">
+        <div className="col-md-3 col-5 mt30">
           <div className="builder_card">
             <div className="builder_img">
               <img src={emaarLogo} alt="builder-logo" />
@@ -36,7 +36,7 @@ const TopBuilders = () => {
             <div className="builder_name">Emaar India</div>
           </div>
         </div>
-        <div className="col-md-3 mt30">
+        <div className="col-md-3 col-5 mt30">
           <div className="builder_card">
             <div className="builder_img">
               <img src={smartworldLogo} alt="builder-logo" />
