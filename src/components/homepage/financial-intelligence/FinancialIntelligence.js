@@ -8,8 +8,8 @@ const FinancialIntelligence = () => {
         <div className="row align-items-center">
           <div className="col-md-6">
             <h3>
-              Financial intelligence to <br />
-              buy property in Dwarka <br />
+              Financial intelligence to <br className="mob_hide" />
+              buy property in Dwarka <br className="mob_hide" />
               Expressway
             </h3>
 

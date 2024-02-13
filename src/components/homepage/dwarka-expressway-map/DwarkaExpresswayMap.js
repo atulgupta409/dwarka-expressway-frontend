@@ -3,7 +3,7 @@ import "./DwarkaExpresswayMap.css";
 
 const DwarkaExpresswayMap = () => {
   return (
-    <div className="container map_container">
+    <div className="container map_container mob_hide">
       <div className="row mb-5">
         <div className="col-md-12">
           <div className="main_heading text-center">

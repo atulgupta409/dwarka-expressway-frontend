@@ -16,8 +16,7 @@ const BestProjectsByLocation = () => {
           </div>
           <div>
             <Link className="view_all_btn">
-              View All {/* <FaArrowRight /> */}
-              <FaArrowRightLong className="shake" />
+              View All <FaArrowRightLong className="shake" />
             </Link>
           </div>
         </div>
@@ -36,48 +35,48 @@ const BestProjectsByLocation = () => {
           Low Rise, Godrej Prive, Signature Global Millenia, SS Linden, Tata La
           Vida, & far more.
         </p>
-        <div className="row">
-          <div className="col-md-3 mt30">
+        <div className="row best_projects_row">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
         </div>
       </div>
       <div className="fw_property_section">
         <div className="container">
-          <div className="property_cards_row">
-            <div className="heading_box">
-              <div>
-                <h2 className="best_project_heading">
-                  Godrej Properties on Dwarka Expressway
-                </h2>
-              </div>
-              <div>
-                <Link className="view_all_btn">
-                  View All <FaArrowRightLong className="shake" />
-                </Link>
-              </div>
+          <div className="heading_box">
+            <div>
+              <h2 className="best_project_heading">
+                Godrej Properties on Dwarka Expressway
+              </h2>
             </div>
+            <div>
+              <Link className="view_all_btn">
+                View All <FaArrowRightLong className="shake" />
+              </Link>
+            </div>
+          </div>
+          <div className="property_cards_row">
             <div className="row">
               <div className="col-md-4 mt30">
                 <Link>
@@ -211,6 +210,32 @@ const BestProjectsByLocation = () => {
               </div>
             </div>
           </div>
+          <div className="row best_projects_row desk_hide d-flex d-md-none">
+            <div className="col-md-3 col-8 mt30">
+              <Card />
+            </div>
+            <div className="col-md-3 col-8 mt30">
+              <Card />
+            </div>
+            <div className="col-md-3 col-8 mt30">
+              <Card />
+            </div>
+            <div className="col-md-3 col-8 mt30">
+              <Card />
+            </div>
+            <div className="col-md-3 col-8 mt30">
+              <Card />
+            </div>
+            <div className="col-md-3 col-8 mt30">
+              <Card />
+            </div>
+            <div className="col-md-3 col-8 mt30">
+              <Card />
+            </div>
+            <div className="col-md-3 col-8 mt30">
+              <Card />
+            </div>
+          </div>
         </div>
       </div>
       <div className="container main_container">
@@ -242,29 +267,29 @@ const BestProjectsByLocation = () => {
           Low Rise, Godrej Prive, Signature Global Millenia, SS Linden, Tata La
           Vida, & far more.
         </p>
-        <div className="row">
-          <div className="col-md-3 mt30">
+        <div className="row best_projects_row">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
-          <div className="col-md-3 mt30">
+          <div className="col-md-3 col-8 mt30">
             <Card />
           </div>
         </div>

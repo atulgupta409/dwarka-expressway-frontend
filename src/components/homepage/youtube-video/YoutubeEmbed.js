@@ -8,7 +8,6 @@ const YoutubeEmbed = () => (
     </h2>
     <iframe
       width="100%"
-      height="480"
       src={"https://www.youtube.com/embed/EmLy_E0VPgk"}
       frameBorder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

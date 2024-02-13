@@ -1,18 +1,19 @@
-/* .video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    margin-top: 30px;
-  } */
+.youtube_video {
+  margin-top: 30px;
+  height: 480px;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 60%;
+  width: 100%;
+  position: absolute;
+}
+
+@media only screen and (max-width: 600px) {
   .youtube_video {
-    margin-top: 30px;
+    margin-top: 15px;
+    height: 209px;
   }
-  
-  .video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 60%;
-    width: 100%;
-    position: absolute;
-  }
+}

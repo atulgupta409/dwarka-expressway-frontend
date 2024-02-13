@@ -22,7 +22,7 @@ const ContactForm = () => {
                   <span>Call now :</span> +91-9999063322
                 </a>
               </p>
-              <p className="phone mb-0">
+              <p className="phone email mb-0">
                 <a href="mailto: sumit.guptapromoters@gmail.com">
                   <span>Email :</span> sumit.guptapromoters@gmail.com
                 </a>

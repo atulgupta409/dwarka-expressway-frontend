@@ -70,3 +70,28 @@
 .expert_content .phone a:hover {
     color: rgb(88, 87, 87);
 }
+
+@media only screen and (max-width: 600px) {
+    .agent-section {
+        margin-top: 40px;
+        padding: 40px 0px;
+    }
+    .expert_content .profile_img {
+        width: 160px;
+        height: 160px;
+    }
+    .expert_content h4 {
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    .expert_content .phone a {
+        font-size: 13px;
+        color: #222;
+    }
+    .expert_content .email {
+        margin-bottom: 14px !important;
+    }
+    .agent_form {
+        width: 98%;
+    }
+}

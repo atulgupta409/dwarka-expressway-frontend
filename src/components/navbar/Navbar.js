@@ -27,23 +27,31 @@ const Navbar = () => {
               <Link
                 className="nav-link nav_link active"
                 aria-current="page"
-                to="/new-launch-projects"
+                to="/new-launch-projects.php"
               >
                 New Launch Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link nav_link" to="/best-projects">
+              <Link className="nav-link nav_link" to="/best-deals">
                 Best Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link nav_link" to="/">
+              <Link className="nav-link nav_link" to="/upcoming-projects.html">
+                Upcoming Projects
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link
+                className="nav-link nav_link"
+                to="/dwarka-expressway-projects-list.php"
+              >
                 All Projects
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link nav_link" to="/">
+              <Link className="nav-link nav_link" to="/contact">
                 Contact
               </Link>
             </li>
