@@ -41,6 +41,9 @@ table tbody tr td a {
 .top_container {
   margin-top: 140px;
 }
+.text-justify {
+  text-align: justify;
+}
 
 @media only screen and (max-width: 600px) {
   p {

@@ -20,7 +20,7 @@ const BestProjectsByLocation = () => {
             </Link>
           </div>
         </div>
-        <p>
+        <p className="text-justify">
           Dwarka Expressway is the upcoming residential hub. Because of its
           strategic location, it is the top pick by residents of Gurgaon &
           Delhi. A grade Social & Physical Infrastructure, Fast-Paced
@@ -252,7 +252,7 @@ const BestProjectsByLocation = () => {
             </Link>
           </div>
         </div>
-        <p>
+        <p className="text-justify">
           Dwarka Expressway is the upcoming residential hub. Because of its
           strategic location, it is the top pick by residents of Gurgaon &
           Delhi. A grade Social & Physical Infrastructure, Fast-Paced
