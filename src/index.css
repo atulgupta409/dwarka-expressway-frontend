@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,600;1,700&family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
 
+:root {
+  --primary-color: #0286b7;
+  --light-blue: #dff6ff;
+  --heading: #002441;
+  --text-color: #465166;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -13,14 +20,25 @@ code {
 p {
   font-size: 15px;
   font-weight: 400;
-  color: #222;
+  color: var(--text-color);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
 }
 .property_about_section .about_content h4,
 .property_about_section .about_content h1 span {
   font-size: 20px;
   line-height: 30px;
-  color: #ff385c;
+  color: var(--primary-color);
   font-weight: 600;
+}
+.mt100 {
+  margin-top: 100px;
 }
 table tbody tr td a {
   text-decoration: none;
@@ -33,7 +51,7 @@ table tbody tr td a {
 .best_project_heading {
   font-size: 30px;
   font-weight: 600;
-  color: #222;
+  color: var(--heading);
 }
 .desk_hide {
   display: none;
@@ -43,6 +61,151 @@ table tbody tr td a {
 }
 .text-justify {
   text-align: justify;
+}
+.heading_span {
+  color: var(--primary-color);
+}
+.typing_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 160px;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-size: 35px;
+  line-height: 40px;
+}
+
+.typing_text {
+  top: 13px;
+  left: 40px;
+  position: absolute;
+  bottom: -100%; /* Push the text below the container */
+  left: 0;
+  width: 100%;
+  animation: slideFromBottom 1s ease forwards;
+}
+
+.content {
+  position: absolute;
+  top: 26px;
+  left: 100px;
+  transform: translate(-50%, -50%);
+  height: 51px;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: gray;
+}
+.content__container {
+  font-weight: 500;
+  overflow: hidden;
+  height: 51px;
+  padding: 0 40px;
+}
+.content__container__text {
+  display: inline;
+  float: left;
+  margin: 0;
+}
+.content__container__list {
+  margin-top: 0;
+  text-align: left;
+  list-style: none;
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.content__container__list__item {
+  line-height: 37px;
+}
+.item1 {
+  margin-top: 8px;
+}
+
+@-webkit-keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes change {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+@keyframes opacity {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes change {
+  0%,
+  12.66%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  16.66%,
+  29.32% {
+    transform: translate3d(0, -25%, 0);
+  }
+  33.32%,
+  45.98% {
+    transform: translate3d(0, -50%, 0);
+  }
+  49.98%,
+  62.64% {
+    transform: translate3d(0, -75%, 0);
+  }
+  66.64%,
+  79.3% {
+    transform: translate3d(0, -50%, 0);
+  }
+  83.3%,
+  95.96% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+@keyframes slideFromBottom {
+  to {
+    bottom: 0;
+  }
 }
 
 @media only screen and (max-width: 600px) {

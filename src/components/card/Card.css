@@ -13,10 +13,10 @@
   font-size: 15px;
   margin-top: 10px;
   font-weight: 600;
-  color: #ff385c;
+  color: var(--primary-color);
 }
 .property_location {
-  color: #222;
+  color: var(--heading);
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 6px;
@@ -29,7 +29,7 @@
   font-weight: 500;
 }
 .property_price span {
-  color: #ff385c;
+  color: var(--primary-color);
   font-weight: 600;
 }
 

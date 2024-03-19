@@ -1,113 +1,101 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./ContactForm.css";
+import { checkValidation } from "../../../utils/validate";
+import mob from "../../../assets/mob-frame.png";
+import approved from "../../../assets/approved-white.svg";
 
 const ContactForm = () => {
+  const [errorMessage, setErrorMessage] = useState(null);
+  const name = useRef(null);
+  const email = useRef(null);
+  const phone = useRef(null);
+
+  const submitFormHandler = () => {
+    const message = checkValidation(
+      name.current.value,
+      email.current.value,
+      phone.current.value
+    );
+    setErrorMessage(message);
+  };
+
   return (
-    <section className="agent-section" id="contact-us">
-      <div className="container">
+    <section className="agent-section main_container">
+      <div className="container position-relative">
         <div className="row align-items-center">
-          <div className="col-md-6 col-12">
-            <div className="expert_content">
-              <img
-                src="https://propularity.in/static/media/sumit-sir-contact-main.6a80238bc66799b9e9a3.png"
-                className="img-fluid m-auto d-block profile_img"
-                alt="sumit anand"
-              />
-              <h4>Sumit Anand Our Property Expert</h4>
-              <p style={{ color: "gray" }}>
-                20+ Years of Experience in Real Estate Investments
-              </p>
-              <p className="phone mb-0">
-                <a href="tel:9999063322">
-                  <span>Call now :</span> +91-9999063322
-                </a>
-              </p>
-              <p className="phone email mb-0">
-                <a href="mailto: sumit.guptapromoters@gmail.com">
-                  <span>Email :</span> sumit.guptapromoters@gmail.com
-                </a>
-              </p>
-            </div>
-          </div>
-          <div className="col-md-6 col-12">
-            <div className="agent_form">
-              <h5>
-                Yes, I am <span style={{ color: "#ff385c" }}>Interested!</span>
-              </h5>
-              <p>Know More About Dwarka Expressway</p>
-              <div className="agent-form">
-                <form id="example3" method="post">
-                  <input type="hidden" id="g-token" name="g-token" value="" />
-                  <input
-                    type="hidden"
-                    name="propertyName"
-                    value="dwarkaexpresswayprojects.in"
-                  />
-                  <div className="row">
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          type="text"
-                          name="namegp"
-                          id="myname"
-                          className="form-control rounded-0"
-                          placeholder="Name"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          type="email"
-                          name="emailgp"
-                          id="myemail"
-                          className="form-control rounded-0"
-                          placeholder="Email"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div className="col-md-12">
-                      <div className="form-group">
-                        <input
-                          type="phone"
-                          name="mobilegp"
-                          maxlength="10"
-                          id="myphone"
-                          className="form-control rounded-0"
-                          placeholder="Mobile"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <select
-                          name="property"
-                          className="form-control form-select"
-                          id="myproperty"
-                          required
-                        >
-                          <option>Property Type</option>
-                          <option value="Residential">Residential</option>
-                          <option value="Commercial">Commercial</option>
-                          <option value="Other/Any">Other/Any</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="form-group">
-                        <button className="btn site_btn" type="submit">
-                          <span>Send</span>
-                        </button>
-                      </div>
-                    </div>
+          <div className="col-md-6 property_expert_left">
+            <h2 className="contact_heading">
+              Connect us to buy property <br />
+              at Dwarka Expressway
+            </h2>
+            <form onSubmit={(e) => e.preventDefault()}>
+              <div className="row">
+                <div className="col-md-6">
+                  <div className="input_box">
+                    <input type="text" ref={name} placeholder="Name" />
+                    <i class="fa fa-regular fa-user"></i>
                   </div>
-                </form>
+                </div>
+                <div className="col-md-6">
+                  <div className="input_box">
+                    <input type="tel" ref={phone} placeholder="Phone" />
+                    <i class="fa fa-solid fa-phone"></i>
+                  </div>
+                </div>
+                <div className="col-md-12">
+                  <div className="input_box">
+                    <input type="email" ref={email} placeholder="Email" />
+                    <i class="fa fa-regular fa-envelope"></i>
+                  </div>
+                </div>
+                <div className="col-md-6 mt-4">
+                  <p className="error_message">{errorMessage}</p>
+                  <button
+                    className="site_btn"
+                    type="submit"
+                    onClick={submitFormHandler}
+                  >
+                    Contact Now
+                  </button>
+                </div>
               </div>
+            </form>
+          </div>
+          <div className="col-md-6 property_expert_right">
+            <div className="d-flex align-item-center contact_right">
+              <div className="contact_right_img">
+                <img src={approved} alt="approved" className="img-fluid" />
+              </div>
+              <p className="contact_right_heading mb-0">Free Site-Visit</p>
+            </div>
+            <div className="d-flex align-item-center contact_right">
+              <div className="contact_right_img">
+                <img src={approved} alt="approved" className="img-fluid" />
+              </div>
+              <p className="contact_right_heading mb-0">Rera Approved</p>
+            </div>
+            <div className="d-flex align-item-center contact_right">
+              <div className="contact_right_img">
+                <img src={approved} alt="approved" className="img-fluid" />
+              </div>
+              <p className="contact_right_heading mb-0">Trusted Developers</p>
+            </div>
+            <div className="d-flex align-item-center contact_right">
+              <div className="contact_right_img">
+                <img src={approved} alt="approved" className="img-fluid" />
+              </div>
+              <p className="contact_right_heading mb-0">Special Price Offers</p>
+            </div>
+            <div className="d-flex align-item-center contact_right">
+              <div className="contact_right_img">
+                <img src={approved} alt="approved" className="img-fluid" />
+              </div>
+              <p className="contact_right_heading mb-0">Easy Payment Plan</p>
             </div>
           </div>
+        </div>
+        <div className="mob position-absolute">
+          <img src={mob} alt="mob" className="img-fluid" />
         </div>
       </div>
     </section>

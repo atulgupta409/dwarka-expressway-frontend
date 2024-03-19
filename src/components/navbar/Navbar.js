@@ -33,13 +33,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link nav_link" to="/best-deals">
-                Best Projects
+              <Link className="nav-link nav_link" to="/upcoming-projects.html">
+                SCO Plots
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link nav_link" to="/upcoming-projects.html">
-                Upcoming Projects
+              <Link className="nav-link nav_link" to="/best-deals">
+                Best Projects
               </Link>
             </li>
             <li className="nav-item">
@@ -50,16 +50,16 @@ const Navbar = () => {
                 All Projects
               </Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link nav_link" to="/contact">
-                Contact
-              </Link>
-            </li>
           </ul>
-          <div className="call_now_btn_box">
-            <a href="tel:9999063322" className="call_now_btn">
-              Call Now: +91 9999063322
+          <div className="call_now_btn_box" style={{ marginRight: "10px" }}>
+            <a href="tel:9999063322">
+              <button className="call_now_btn">
+                <i class="fa fa-solid fa-phone-volume"></i> 9999063322
+              </button>
             </a>
+          </div>
+          <div className="call_now_btn_box">
+            <button className="call_now_btn">Enquire Now</button>
           </div>
         </div>
       </div>

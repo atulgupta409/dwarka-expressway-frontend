@@ -1,10 +1,53 @@
 import React from "react";
 import "./Footer.css";
+import logo from "../../assets/logo_dew.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <>
+      <div className="footer_top">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4">
+              <h5 className="footer_heading">Popular Searches</h5>
+              <p>Best Projects on Dwarka Expressway</p>
+              <p>New Launch Projects on Dwarka Expressway</p>
+              <p>SCO Plots in Gurgaon</p>
+              <p>Residential projects on Dwarka Expressway</p>
+              <p>Commercial projects on Dwarka Expressway</p>
+            </div>
+            <div className="col-md-3">
+              <h5 className="footer_heading">
+                Buy Property on Dwarka Expressway
+              </h5>
+              <p>Buy Dwarka Expressway Affordable Housing Projects</p>
+              <p>Buy Apartment on Dwarka Expressway</p>
+              <p>Buy Plots on Dwarka Expressway</p>
+              <p>Buy Shops on Dwarka Expressway</p>
+              <p>Buy Villas on Dwarka Expressway</p>
+            </div>
+            <div className="col-md-3">
+              <h5 className="footer_heading">
+                Top Projects on Dwarka Expressway
+              </h5>
+              <p>Hero Homes</p>
+              <p>Sobha City</p>
+              <p>Emaar Palm Heights</p>
+              <p>DLF Ultima</p>
+              <p>Vatika Seven Elements</p>
+            </div>
+            <div className="col-md-2">
+              <h5 className="footer_heading">Top Builders</h5>
+              <p>Emaar India</p>
+              <p>DLF Ltd.</p>
+              <p>ATS Group</p>
+              <p>Conscient Group</p>
+              <p>Godrej Projects</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <footer className="footer_section">
         <div className="container">
           <div className="footer-top">
@@ -12,13 +55,17 @@ const Footer = () => {
               <div className="col-md-3">
                 <div className="about_footer">
                   <img
-                    src="https://www.dwarkaexpresswayprojects.in/img/logo_dew.png"
+                    src={logo}
                     className="img-fluid d-block"
                     alt="Dwarka Expressway"
                   />
-                  <p>
-                    Best place to buy all New and Luxury Projects on Dwarka
-                    Expressway Gurgaon.
+                  <p className="text-white text-justify">
+                    Dwarka Expressway is the upcoming residential hub. Because
+                    of its strategic location, it is the top pick by residences
+                    of Gurgaon & Delhi. A grade social & physical
+                    infrastructure, Fast-Pased connectivity & Landscape greenery
+                    all around make it an ideal 29.5 km long site to live
+                    flawlessly in NCR.
                   </p>
                   <ul className="footer_sm">
                     <li>
@@ -39,298 +86,36 @@ const Footer = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-4">
-                <h5>Dwarka Expressway Projects</h5>
-                <ul className="footer_menu">
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/new-launch-projects.php">
-                      Buy Property on Dwarka Expressway
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/dwarka-expressway-projects-list.php">
-                      Dwarka Expressway Sectors
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/sitemap.php">
-                      Dwarka Expressway All Projects
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/buy-plots-on-dwarka-expressway.php">
-                      Buy Plots on Dwarka Expressway
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/buy-shops-on-dwarka-expressway.php">
-                      Buy Shops on Dwarka Expressway
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/buy-villas-on-dwarka-expressway.php">
-                      Buy Villas on Dwarka Expressway
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/buy-apartments-on-dwarka-expressway.php">
-                      Buy Apartment on Dwarka Expressway
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/disclaimer.html">
-                      Disclaimer
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/contact.php">
-                      Contact us
-                    </a>
-                  </li>
-                </ul>
+              <div className="col-md-3 middle_footer">
+                <h5 className="text-white footer_heading mb-3">Top Projects</h5>
+                <p>Hero Homes</p>
+                <p>Sobha City</p>
+                <p>Emaar Palm Heights</p>
+                <p>DLF Ultima</p>
+                <p>Vatika Seven Elements</p>
               </div>
-              <div className="col-md-2 col-6">
-                <h5>Top Builders</h5>
-                <ul className="footer_menu">
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/emaarmgf.php">
-                      Emaar India
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/buy-dlf-propety-in-gurgaon.php">
-                      DLF Limited
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/ats-projects-in-gurgaon.html">
-                      ATS Group
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/conscientgroup.php">
-                      Conscient Group
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/godrej-properties.html">
-                      Godrej Projects
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/tata-projects-on-dwarka-expressway.html">
-                      TATA Housing
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/vatika-projects-on-dwarka-expressway.html">
-                      Vatika Builders
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/experion-developers.php">
-                      Experion Developers
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/puriconstructions.php">
-                      Puri Constructions
-                    </a>
-                  </li>
-                </ul>
+              <div className="col-md-3 col-6 middle_footer">
+                <h5 className="text-white footer_heading mb-3">Builders</h5>
+                <p>Emaar India</p>
+                <p>DLF Ltd.</p>
+                <p>ATS Group</p>
+                <p>Conscient Group</p>
+                <p>Godrej Projects</p>
               </div>
-              <div className="col-md-3 col-6">
-                <h5>New Projects</h5>
-                <ul className="footer_menu">
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/hero-homes/">
-                      Hero Homes
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/sobha-city-gurgaon-sector-108/">
-                      Sobha City
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/buy-apartment-in-emaar-palm-heights/">
-                      Emaar Palm Heights
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/buy-apartment-in-joyville/">
-                      Shapoorji Pallonji Joyville
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/buy-apartment-in-dlf-ultima/">
-                      DLF Ultima
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/buy-apartments-in-heritage-max/">
-                      Heritage Max
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/vatika-seven-elements/">
-                      Vatika Seven Elements
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.dwarkaexpresswayprojects.in/vatika-sovereign-park-sector-99-gurgaon/">
-                      Vatika Sovereign Park
-                    </a>
-                  </li>
-                </ul>
+              <div className="col-md-3 col-6 middle_footer">
+                <h5 className="text-white footer_heading mb-3">Explore</h5>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-12">
+                <p className="copyright_text text-center text-white">
+                  Copyright © {year} Dwarka Expressway | All rights reserved
+                </p>
               </div>
             </div>
           </div>
         </div>
       </footer>
-
-      <section className="footer-links">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <ul className="footer_links_list">
-                <li>
-                  <a href="http://www.guptapromoters.com/">
-                    Buy Property in Gurgaon
-                  </a>
-                </li>
-                <li>
-                  <a href="http://gurgaonplot.com/">Buy Plot in Gurgaon</a>
-                </li>
-                <li>
-                  <a href="http://www.gurgaoncommercial.co.in/">
-                    Buy Commercial Property in Gurgaon
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.gurgaoncommercial.co.in/aipl/">
-                    Buy Property in AIPL Gurgaon
-                  </a>
-                </li>
-                <li>
-                  <a href="http://alexandro.in/">Buy Rent Office in Gurgaon</a>
-                </li>
-                <li>
-                  <a href="https://alexandro.in/coworking-space-in-gurgaon.php">
-                    Best Coworking Space in Gurgaon
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.m3m-golfestate.in/">
-                    Buy Property in M3M Golf Estate Gurgaon
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.ireoprojects.co.in/">
-                    {" "}
-                    Buy Property in Ireo Gurgaon
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.emaargurgaon.com/">
-                    Buy Property in Emaar Gurgaon
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.guptapromoters.com/buy-property-on-golf-course-road.php">
-                    Buy Property on Golf Course Road Gurgaon{" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.guptapromoters.com/buy-property-on-golf-course-extension-road.php">
-                    Buy Property on Golf Course Extension Road Gurgaon{" "}
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/">Coworking Space for rent</a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking">
-                    Coworking Space in India
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/gurugram">
-                    Coworking Space in Gurgaon
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/delhi">
-                    Coworking Space in Delhi
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/noida">
-                    Coworking Space in Noida
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/bangalore">
-                    Coworking Space in Bangalore
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/hyderabad">
-                    Coworking Space in Hyderabad
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/pune">
-                    Coworking Space in Pune
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/bangalore/koramangala">
-                    Coworking Space in Koramangala
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/bangalore/indiranagar">
-                    Coworking Space in Indiranagar
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/bangalore/whitefield">
-                    Coworking Space in Whitefield
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/delhi/south-delhi">
-                    Coworking Space in South Delhi
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/delhi/connaught-place">
-                    Coworking Space in Connaught Place
-                  </a>
-                </li>
-                <li>
-                  <a href="https://cofynd.com/coworking/delhi/dwarka-delhi">
-                    Coworking Space in Dwarka{" "}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="footer_bottom">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <p className="copyright_text text-center">
-                Copyright © {year} Dwarka Expressway | All rights reserved
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </>
   );
 };

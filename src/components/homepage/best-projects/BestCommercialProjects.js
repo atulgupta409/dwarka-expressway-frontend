@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Card from "../../card/Card";
 
-const BestProjectsByLocation = () => {
+const BestCommercialProjects = () => {
   return (
     <>
       <div className="container main_container">
         <div className="heading_box">
           <div>
             <h2 className="best_project_heading">
-              <span className="heading_span">Best Projects</span> on Dwarka
-              Expressway
+              <span className="heading_span">Commercial Projects</span> on
+              Dwarka Expressway
             </h2>
           </div>
           <div>
@@ -66,4 +66,4 @@ const BestProjectsByLocation = () => {
   );
 };
 
-export default BestProjectsByLocation;
+export default BestCommercialProjects;

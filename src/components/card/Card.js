@@ -17,9 +17,7 @@ const Card = () => {
         </div>
         <div className="card_body">
           <h4>M3M Crown</h4>
-          <div className="property_location">
-            <FaLocationDot className="location_icon" /> Sector 106, Gurugram
-          </div>
+          <div className="property_location">Sector 106, Gurugram</div>
           <p className="property_price">
             <span>₹ 3.50 Cr*</span> Onwards
           </p>

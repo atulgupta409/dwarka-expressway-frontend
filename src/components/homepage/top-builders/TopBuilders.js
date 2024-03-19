@@ -9,7 +9,8 @@ const TopBuilders = () => {
   return (
     <div className="container main_container">
       <h2 className="best_project_heading">
-        Popular Builders on Dwarka Expressway
+        <span className="heading_span">Popular Builders</span> on Dwarka
+        Expressway
       </h2>
       <div className="row best_projects_row">
         <div className="col-md-3 col-5 mt30">
