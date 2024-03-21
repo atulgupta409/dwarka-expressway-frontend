@@ -4,7 +4,8 @@ import "./YoutubeEmbed.css";
 const YoutubeEmbed = () => (
   <div className="container main_container">
     <h2 className="best_project_heading text-center">
-      All you need to know about Dwarka Expressway Gurgaon
+      All you need to know about{" "}
+      <span className="heading_span">Dwarka Expressway</span> Gurgaon
     </h2>
     <iframe
       width="100%"

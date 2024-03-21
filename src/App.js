@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
-import Homepage from "./components/homepage/Homepage";
 import { Suspense, lazy } from "react";
 import ShimmerCard from "./components/card/ShimmerCard";
+const Homepage = lazy(() => import("./components/homepage/Homepage"));
 const PropertyDetails = lazy(() =>
   import("./components/property-details/PropertyDetails")
 );
@@ -33,7 +33,9 @@ function App() {
           path="/"
           element={[
             <Navbar key={1} />,
-            <Homepage key={2} />,
+            <Suspense fallback={<h2>Loading...</h2>}>
+              <Homepage key={2} />
+            </Suspense>,
             <Footer key={3} />,
           ]}
         />
@@ -42,7 +44,7 @@ function App() {
           element={[
             <Navbar key={4} />,
             <Suspense key={5} fallback={<ShimmerCard cards={8} mt={"100px"} />}>
-              <NewLaunchProjects />{" "}
+              <NewLaunchProjects />
             </Suspense>,
             <Footer key={6} />,
           ]}

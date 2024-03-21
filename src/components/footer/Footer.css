@@ -4,8 +4,11 @@
   background-color: var(--primary-color);
 }
 .about_footer img {
-  margin-bottom: 10px;
+  margin-bottom: 17px;
   width: 190px !important;
+}
+.about_footer {
+  padding-right: 70px;
 }
 .about_footer .footer_sm {
   padding: 0px;
@@ -25,18 +28,17 @@
   margin: 0px 5px;
 }
 .about_footer .footer_sm li i:hover {
-  border: 1px solid #ff385c;
-  background-color: #ff385c;
-  color: #fff;
+  background-color: #fff;
+  color: var(--primary-color);
 }
 .about_footer .footer_sm li i {
-  border: 1px solid #ff385c;
+  border: 1px solid #fff;
   width: 30px;
   height: 30px;
   text-align: center;
   line-height: 30px;
   font-size: 15px;
-  color: #ff385c;
+  color: #fff;
   border-radius: 50%;
   transition: 0.3s all ease-in-out;
 }

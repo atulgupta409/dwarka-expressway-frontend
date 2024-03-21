@@ -7,7 +7,9 @@ const DwarkaExpresswayMap = () => {
       <div className="row mb-5">
         <div className="col-md-12">
           <div className="main_heading text-center">
-            <h3>Dwarka Expressway MAP</h3>
+            <h2 className="best_project_heading text-center">
+              <span className="heading_span">Dwarka Expressway</span> MAP
+            </h2>
           </div>
         </div>
       </div>

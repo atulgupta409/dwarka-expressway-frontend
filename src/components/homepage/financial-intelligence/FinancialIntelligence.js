@@ -7,16 +7,16 @@ const FinancialIntelligence = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">
-            <h3>
-              Financial intelligence to <br className="mob_hide" />
-              buy property in Dwarka <br className="mob_hide" />
-              Expressway
-            </h3>
+            <h2 className="best_project_heading">
+              <span className="heading_span">Financial intelligence</span> to
+              buy property <br className="mob_hide" />
+              in Dwarka Expressway
+            </h2>
 
-            <p>
+            <p className="text-justify">
               The investor community is seeing the area around Dwarka Expressway
               as a serious investment opportunity. Early investments have shown
-              excellent growth; and with the Expressway heading towards
+              excellent growth, and with the Expressway heading towards
               completion, investor interest is very positive!
             </p>
           </div>

@@ -75,7 +75,7 @@ const ImageGallery = () => {
   }, []);
 
   return (
-    <div className="top_container">
+    <div>
       {imgData?.img && (
         <div className="large_img_box">
           <button onClick={() => imgAction()} className="gallery_close_btn">

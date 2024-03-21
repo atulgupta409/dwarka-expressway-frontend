@@ -35,16 +35,16 @@ const Homepage = () => {
       <Suspense fallback={<ShimmerCard cards={8} />}>
         <BestAffordableHousing />
       </Suspense>
-      <ContactForm />
-      <Faq />
-      {/* <DwarkaExpresswayMap /> */}
-      {/* <FinancialIntelligence /> */}
-      {/* <Suspense fallback={<h2>Loading...</h2>}>
+      <DwarkaExpresswayMap />
+      <FinancialIntelligence />
+      <Suspense fallback={<h2>Loading...</h2>}>
         <TopBuilders />
-      </Suspense> */}
-      {/* <Suspense fallback={<h2>Loading...</h2>}>
+      </Suspense>
+      <ContactForm />
+      <Suspense fallback={<h2>Loading...</h2>}>
         <YoutubeEmbed />
-      </Suspense> */}
+      </Suspense>
+      <Faq />
     </>
   );
 };

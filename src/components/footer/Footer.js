@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import logo from "../../assets/logo_dew.png";
+import logoWhite from "../../assets/logo-white.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -52,10 +52,10 @@ const Footer = () => {
         <div className="container">
           <div className="footer-top">
             <div className="row">
-              <div className="col-md-3">
+              <div className="col-md-4">
                 <div className="about_footer">
                   <img
-                    src={logo}
+                    src={logoWhite}
                     className="img-fluid d-block"
                     alt="Dwarka Expressway"
                   />
@@ -68,7 +68,7 @@ const Footer = () => {
                     flawlessly in NCR.
                   </p>
                   <ul className="footer_sm">
-                    <li>
+                    <li style={{ marginLeft: "0" }}>
                       <a href="https://facebook.com/dwarkaExpresswayProjects/">
                         <i className="fa-brands fa-facebook-f"></i>
                       </a>
@@ -102,8 +102,14 @@ const Footer = () => {
                 <p>Conscient Group</p>
                 <p>Godrej Projects</p>
               </div>
-              <div className="col-md-3 col-6 middle_footer">
+              <div className="col-md-2 col-6 middle_footer">
                 <h5 className="text-white footer_heading mb-3">Explore</h5>
+                <p>Home</p>
+                <p>New Launch Projects</p>
+                <p>SCO Plots</p>
+                <p>Best Projects</p>
+                <p>All Projects</p>
+                <p>Privacy Policy</p>
               </div>
             </div>
             <div className="row">

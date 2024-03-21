@@ -65,6 +65,15 @@ table tbody tr td a {
 .heading_span {
   color: var(--primary-color);
 }
+.expert_btn {
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: 600;
+  color: #0286b7;
+  margin-top: 12px;
+  background-color: #fff;
+}
 .typing_container {
   position: absolute;
   top: 50%;
