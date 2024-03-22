@@ -2,6 +2,9 @@ import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import { Suspense, lazy } from "react";
 import ShimmerCard from "./components/card/ShimmerCard";
+const ScoPlotsGurgaon = lazy(() =>
+  import("./components/sco-plots/ScoPlotsGurgaon")
+);
 const Homepage = lazy(() => import("./components/homepage/Homepage"));
 const PropertyDetails = lazy(() =>
   import("./components/property-details/PropertyDetails")
@@ -18,9 +21,6 @@ const ImageGallery = lazy(() =>
   import("./components/property-details/ImageGallery")
 );
 const Footer = lazy(() => import("./components/footer/Footer"));
-const UpcomingProjects = lazy(() =>
-  import("./components/upcoming-projects/UpcomingProjects")
-);
 const AllProjectsList = lazy(() =>
   import("./components/all-projects-list/AllProjectsList")
 );
@@ -88,11 +88,11 @@ function App() {
           }
         />
         <Route
-          path="/upcoming-projects.html"
+          path="/sco-plots-gurgaon"
           element={[
             <Navbar key={16} />,
             <Suspense key={17} fallback={<ShimmerCard cards={8} />}>
-              <UpcomingProjects />
+              <ScoPlotsGurgaon />
             </Suspense>,
             <Footer key={18} />,
           ]}

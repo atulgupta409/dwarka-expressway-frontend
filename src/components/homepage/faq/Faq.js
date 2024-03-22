@@ -5,7 +5,7 @@ import faqSideImg from "../../../assets/faq_side_img.svg";
 function Faq() {
   return (
     <>
-      <div className="container mb60 mt100">
+      <div className="container mt100">
         <h2 className="text-center best_project_heading">
           <span className="heading_span">Frequently Asked Question</span>
         </h2>

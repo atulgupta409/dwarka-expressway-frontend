@@ -3,6 +3,11 @@ import "./PropertyDetails.css";
 import FloorPlan from "./FloorPlan";
 import Amenities from "./Amenities";
 import ProjectLocation from "./ProjectLocation";
+import LocationAdvantages from "./LocationAdvantages";
+import ApartmentForSale from "./ApartmentForSale";
+import MoreProjectsByBuilder from "./MoreProjectsByBuilder";
+import SimilarProjects from "./SimilarProjects";
+import ProjectContact from "./ProjectContact";
 
 const BannerSlider = lazy(() => import("./BannerSlider"));
 const AboutProperty = lazy(() => import("./AboutProperty"));
@@ -32,9 +37,15 @@ const PropertyDetails = () => {
             <hr className="divider_line" />
             <PropertyImages />
           </div>
-          <div className="col-md-4"></div>
+          <div className="col-md-4">
+            <ProjectContact />
+          </div>
         </div>
       </div>
+      <LocationAdvantages />
+      <ApartmentForSale />
+      <MoreProjectsByBuilder />
+      <SimilarProjects />
     </>
   );
 };

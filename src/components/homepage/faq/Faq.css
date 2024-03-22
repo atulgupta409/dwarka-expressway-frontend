@@ -17,9 +17,6 @@
 .faq_container {
     margin-bottom: 60px;
 }
-.mb60 {
-    margin-bottom: 60px;
-}
 
 @media only screen and (max-width: 768px) {
     .mb60 {
